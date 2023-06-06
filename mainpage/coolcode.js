@@ -1,7 +1,7 @@
 
 
 
-function getRandomImage() {
+function getRandomImageHero() {
     // Array of image URLs
     var imageUrls = [
       "assets/Quincy.png",//
@@ -29,5 +29,5 @@ function getRandomImage() {
     var randomImageUrl = imageUrls[randomIndex];
 
     // Display the image in the HTML element with id "result"
-    document.getElementById("result").src = randomImageUrl;
+    document.getElementById("resultHero").src = randomImageUrl;
   }

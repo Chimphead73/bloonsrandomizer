@@ -1,4 +1,8 @@
-#result {
+#resultHero {
+    width: 300px;
+    height: 300px;
+  }
+  #resultMonkey {
     width: 300px;
     height: 300px;
   }
