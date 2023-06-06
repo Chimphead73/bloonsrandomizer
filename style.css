@@ -33,7 +33,7 @@
     font-family: 'Luckiest Guy', Arial, sans-serif;
   }
   h1 {
-    margin-top: 0;
+    margin-top: 40px;
     -webkit-text-stroke: 2.5px black;
     text-shadow: 2px 2px 4px black;
     font-size: 72px;
@@ -47,4 +47,14 @@
     background-size: 100% 220%;
     background-repeat: no-repeat;
     background-position: center;
+  }
+  #fustyModeButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  #fustyModeText {
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }

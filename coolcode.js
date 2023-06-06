@@ -1,8 +1,8 @@
 
-
+var fustyMode = false;
 
 function getRandomImageHero() {
-    // Array of image URLs
+   
     var imageUrls = [
       "assets/Quincy.png",//
       "assets/Gwendolin.png",//
@@ -28,8 +28,12 @@ function getRandomImageHero() {
     // Get the random image URL based on the random index
     var randomImageUrl = imageUrls[randomIndex];
 
-    // Display the image in the HTML element with id "result"
+    if(fustyMode == false){
     document.getElementById("resultHero").src = randomImageUrl;
+    }
+    else{
+      document.getElementById("resultHero").src = "assets/PatFusty.png";
+    }
   }
 
   function getRandomImageMonkey() {
@@ -68,5 +72,37 @@ function getRandomImageHero() {
     var randomImageUrl = imageUrls[randomIndex];
 
     // Display the image in the HTML element with id "result"
+    if(fustyMode == false){
     document.getElementById("resultMonkey").src = randomImageUrl;
+    }
+    else{
+      document.getElementById("resultMonkey").src = "assets/PatFusty.png";
+    }
   }
+
+
+function toggleFustyMode() {
+  
+  if (fustyMode === false) {
+ 
+    console.log("Fusty Mode activated!");
+    fustyMode = true;
+    
+  } else {
+
+    console.log("Fusty Mode deactivated!");
+    fustyMode = false;
+  }
+  updateFustyModeText();
+}
+
+function updateFustyModeText() {
+  var fustyModeTextElement = document.getElementById("fustyModeText");
+  if (fustyMode === true) {
+    fustyModeTextElement.textContent = "Fusty Mode: Enabled";
+  } else {
+    fustyModeTextElement.textContent = "Fusty Mode: Disabled";
+  }
+}
+
+updateFustyModeText();
