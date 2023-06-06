@@ -4,20 +4,20 @@ var fustyMode = false;
 function getRandomImageHero() {
    
     var imageUrls = [
-      "assets/Quincy.png",//
-      "assets/Gwendolin.png",//
-      "assets/StrikerJones.png",//
-      "assets/ObynGreenfoot.png",//
-      "assets/CaptainChurchill.png",//
-      "assets/PatFusty.png",//
-      "assets/AdmiralBrickell.png",//
-      "assets/Etienne.png",
-      "assets/Sauda.png",//
-      "assets/Psi.png",
-      "assets/Geraldo.png",//
-      "assets/BenJammin.png",//
-      "assets/Ezili.png",//
-      "assets/Adora.png",//
+      "assets/Quincy.png",//a
+      "assets/Gwendolin.png",//a
+      "assets/StrikerJones.png",//a
+      "assets/ObynGreenFoot.png",//
+      "assets/CaptainChurchill.png",//a
+      "assets/PatFusty.png",//a
+      "assets/AdmiralBrickell.png",//a
+      "assets/Etienne.png",//a
+      "assets/Sauda.png",//a
+      "assets/Psi.png",//a
+      "assets/Geraldo.png",//a
+      "assets/BenJammin.png",//a
+      "assets/Ezili.png",//a
+      "assets/Adora.png",//a
       
       // Add more image URLs here
     ];
