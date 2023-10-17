@@ -81,6 +81,177 @@ function getRandomImageHero() {
   }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  function randomizeMap() {
+    var maparr = [];
+    //array of maps by difficulty 
+    var beginnermaps = [
+      "Monkey Meadow",
+      "Tree Stump",
+      "Town Center",
+      "Middle of the Road",
+      "One Two Tree",
+      "Scrapyard",
+      "The Cabin",
+      "Resort",
+      "Skates",
+      "Lotus Island",
+      "Candy Falls",
+      "Winter Park",
+      "Carved",
+      "Park Path",
+      "Alpine Run",
+      "Frozen Over",
+      "In The Loop",
+      "Cubism",
+      "Four Circles",
+      "Hedge",
+      "End of the Road",
+      "Logs"
+    ];
+    
+    var intermediateMaps = [
+
+      "Water Park",
+      "Polyphemus",
+      "Covered Garden",
+      "Quarry",
+      "Quiet Street",
+      "Bloonarius Prime",
+      "Balance",
+      "Encrypted",
+      "Bazaar",
+      "Adora's Temple",
+      "Spring Spring",
+      "KartsNDarts",
+      "Moon Landing",
+      "Haunted",
+      "Downstream",
+      "Firing Range",
+      "Cracked",
+      "Streambed",
+      "Chutes",
+      "Rake",
+      "Spice Islands"
+    ];
+    
+    var advancedMaps = [
+   
+      "Dark Path",
+      "Erosion",
+      "Midnight Mansion",
+      "Sunken Columns",
+      "X Factor",
+      "Mesa",
+      "Geared",
+      "Spillway",
+      "Cargo",
+      "Pat's Pond",
+      "Peninsula",
+      "High Finance",
+      "Another Brick",
+      "Off The Coast",
+      "Cornfield",
+      "Underground"
+    ];
+
+    var expertMaps = [
+      "Dark Dungeons",
+      "Sanctuary",
+      "Ravine",
+      "Flooded Valley",
+      "Infernal",
+      "Bloody Puddles",
+      "Workshop",
+      "Quad",
+      "Dark Castle",
+      "Muddy Puddles",
+      "#Ouch"
+    ];
+    
+
+    var beginnerCheckbox = document.getElementById('beginnerCheckbox');
+    var intermediateCheckbox = document.getElementById('intermediateCheckbox');
+    var advancedCheckbox = document.getElementById('advancedCheckbox');
+    var expertCheckbox = document.getElementById('expertCheckbox');
+// Check if Beginner checkbox is selected
+var isBeginnerSelected = beginnerCheckbox.checked;
+
+// Check if Intermediate checkbox is selected
+var isIntermediateSelected = intermediateCheckbox.checked;
+
+// Check if Advanced checkbox is selected
+var isAdvancedSelected = advancedCheckbox.checked;
+
+// Check if Expert checkbox is selected
+var isExpertSelected = expertCheckbox.checked;
+
+// Check if Beginner checkbox is selected
+if (beginnerCheckbox.checked) {
+  maparr = maparr.concat(beginnermaps);
+}
+
+// Check if Intermediate checkbox is selected
+if (intermediateCheckbox.checked) {
+  maparr = maparr.concat(intermediateMaps);
+}
+
+// Check if Advanced checkbox is selected
+if (advancedCheckbox.checked) {
+  maparr = maparr.concat(advancedMaps);
+}
+
+// Check if Expert checkbox is selected
+if (expertCheckbox.checked) {
+  maparr = maparr.concat(expertMaps);
+}
+var randomIndex = Math.floor(Math.random() * maparr.length);
+var randomMap = maparr[randomIndex];// Update the <h3> element with the random map value
+var mapHeading = document.getElementById("mapHeading");
+// Get the random image URL based on the random index
+if(maparr.length != 0){
+  document.getElementById("resultMap").src = "assets/placeholderformap.png"
+mapHeading.textContent = randomMap;
+
+}
+else{
+  document.getElementById("resultMap").src = "assets/placeholder.jpg"
+  mapHeading.textContent = "you forgot to select a difficulty you silly goose!!";
+}
+
+
+
+
+
+
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 function toggleFustyMode() {
   
   if (fustyMode === false) {

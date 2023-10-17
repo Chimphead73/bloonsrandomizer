@@ -1,60 +1,81 @@
 .image-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    text-align: center;
-  }
-  .image-container img {
-    width: 300px;
-    height: 300px;
-  }
-  .randomize-button-container {
-    display: flex;
-    justify-content: center;
-  }
-  .randomize-button {
-    font-family: "LuckiestGuy", cursive;
-    margin-top: 10px;
-    font-family: 'Luckiest Guy', Arial, sans-serif;
-   
-        width: 250px;
-        height: 50px;
-        font-size: 24px;
-      
-  }
-  body {
-    -webkit-text-stroke: 1px black;
-    text-shadow: 2px 2px 4px black;
-    font-family: "LuckiestGuy";
-    -webkit-text-fill-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
 
-    text-align: center;
-    font-family: 'Luckiest Guy', Arial, sans-serif;
-  }
-  h1 {
-    margin-top: 40px;
-    -webkit-text-stroke: 2.5px black;
-    text-shadow: 2px 2px 4px black;
-    font-size: 72px;
-  }
-  @font-face {
-    font-family: 'Luckiest Guy';
-    src: url('assets/LuckiestGuy-Regular.ttf') format('truetype');
-  }
-  body {
-    background-image: url('assets/background.png');
-    background-size: 100% 220%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #fustyModeButton {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-  }
-  #fustyModeText {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
+.image-container img {
+  width: 300px;
+  height: 300px;
+}
+
+.randomize-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.randomize-button {
+  font-family: "LuckiestGuy", cursive;
+  margin-top: 10px;
+  font-family: 'Luckiest Guy', Arial, sans-serif;
+  width: 250px;
+  height: 50px;
+  font-size: 24px;
+}
+
+body {
+  -webkit-text-stroke: 1px black;
+  text-shadow: 2px 2px 4px black;
+  font-family: "LuckiestGuy";
+  -webkit-text-fill-color: white;
+  text-align: center;
+  font-family: 'Luckiest Guy', Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 40px;
+  -webkit-text-stroke: 2.5px black;
+  text-shadow: 2px 2px 4px black;
+  font-size: 72px;
+}
+
+@font-face {
+  font-family: 'Luckiest Guy';
+  src: url('assets/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+body {
+  background-image: url('assets/background.png');
+  background-size: 100% 220%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fustyModeButton {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+#fustyModeText {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+/* Add these CSS rules */
+.container {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start; /* Align checkboxes to the top */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container input[type="checkbox"] {
+  margin-right: 5px;
+}
+

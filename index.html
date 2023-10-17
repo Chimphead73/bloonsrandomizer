@@ -9,27 +9,50 @@
     <link rel="icon" href="mongee.ico">
 </head>
 <body>
-    <h1>Random Hero and Monkey</h1>
-    <div class="image-container">
-      <div>
-        <h2>Hero</h2>
-        <img id="resultHero" src="assets/placeholder.jpg" alt="Random Hero Image">
-        <div class="randomize-button-container">
-          <button onclick="getRandomImageHero()" class="randomize-button">Randomize Hero</button>
-        </div>
-      </div>
-      <div>
-        <h2>Monkey</h2>
-        <img id="resultMonkey" src="assets/placeholder.jpg" alt="Random Monkey Image">
-        <div class="randomize-button-container">
-          <button onclick="getRandomImageMonkey()" class="randomize-button">Randomize Monkey</button>
-        </div>
-      </div>
-      <div class="container">
-        <button id="fustyModeButton" onclick="toggleFustyMode()">Toggle Fusty Mode</button>
-        <p id="fustyModeText"></p>
+  <h1>Random Hero, Monkey, And Map</h1>
+  <div class="image-container">
+    <div>
+      <h2>Hero</h2>
+      <img id="resultHero" src="assets/placeholder.jpg" alt="Random Hero Image">
+      <div class="randomize-button-container">
+        <button onclick="getRandomImageHero()" class="randomize-button">Randomize Hero</button>
       </div>
     </div>
-    <script src="coolcode.js"></script>
+    <div>
+      <h2>Monkey</h2>
+      <img id="resultMonkey" src="assets/placeholder.jpg" alt="Random Monkey Image">
+      <div class="randomize-button-container">
+        <button onclick="getRandomImageMonkey()" class="randomize-button">Randomize Monkey</button>
+      </div>
+    </div>
+    <div>
+      <h2 id="mapHeading">map</h2>
+      <img id="resultMap" src="assets/placeholder.jpg" alt="Random map Image">
+      <div class="randomize-button-container">
+        <button onclick="randomizeMap()" class="randomize-button">Randomize Map</button>
+      </div>
+    </div>
+    <div class="container">
+      <div>
+        <input type="checkbox" id="beginnerCheckbox">
+        <label for="beginnerCheckbox">Beginner</label>
+      </div>
+      <div>
+        <input type="checkbox" id="intermediateCheckbox">
+        <label for="intermediateCheckbox">Intermediate</label>
+      </div>
+      <div>
+        <input type="checkbox" id="advancedCheckbox">
+        <label for="advancedCheckbox">Advanced</label>
+      </div>
+      <div>
+        <input type="checkbox" id="expertCheckbox">
+        <label for="expertCheckbox">Expert</label>
+      </div>
+      <button id="fustyModeButton" onclick="toggleFustyMode()">Toggle Fusty Mode</button>
+      <p id="fustyModeText"></p>
+    </div>
+  </div>
+  <script src="coolcode.js"></script>
 </body>
 </html>
