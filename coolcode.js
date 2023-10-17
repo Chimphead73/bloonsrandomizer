@@ -232,7 +232,13 @@ else{
 }
 
 
-
+if(fustyMode == false){
+ 
+  }
+  else{
+    document.getElementById("resultMap").src = "assets/PatFusty.png";
+    mapHeading.textContent = "funny monke"
+  }
 
 
 
